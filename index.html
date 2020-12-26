@@ -15,9 +15,10 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arvo&display=swap">
+
 <link rel="stylesheet" type="text/css" href="pcstyle.css">
-<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 600px)" href="mobile.css">
+<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 600px)" href="mobilestyle.css">
 
 </head>
 
@@ -79,8 +80,7 @@
 <!--Navigation Bar -->
 
 <!--Slideshow Banner -->
-<div class ="banner">
-<img class = "banner-image" src="images/slide1.jpg"> </img>
+<div class ="banner" id = "banner1">
 <div class = "banner-heading">
     <h1>Welcome To The Official Website Of Sven Tang!</h1>
     <hr>
@@ -91,8 +91,7 @@
 
 <!--Bio Banner -->
 
-<div class= "banner">
-<img class = "banner-image" src="images/profile_background.jpg"> </img>
+<div class= "banner" id = "banner2">
 
 <div class = "banner-heading2"> 
 <img id="profile_pic" src="images/headshot.png"></img>
@@ -107,22 +106,22 @@ When I'm not busy studying, I enjoy watching animes/cartoons, exploring new plac
 <br/>
 <h4>Click Below For More Random Facts About Me:</h4>
 <p>...</p>
-<button type="button" class="btn btn-success">Fun Facts About Sven</button>
+<button type="button" class="btn btn-success btn-lg">Fun Facts About Sven</button>
 </div>
 </div>
 
 <!--Bio Banner -->
 
 <!--Stack Showcase -->
-<div class="banner">
-<img class="banner-image" src="images/stackbackground.jpg"> </img>
+<div class="banner" id = "banner3">
 <div class= "banner-heading3">
     <h2>Experienced Developer</h2>
-    <h6> 
+    <br/>
+    <h5> 
     I have been into coding since age 16 and have 5 years of experience with front & back-end development. <br/>
     My projects currently consist of small scale data analysis and visuals, and making web pages like this one!<br/>
     I'm working towards learning advanced web application development and large scale data analysis and AI.
-    </h6>
+    </h5>
     <hr>
     <h4>My current Stack</h4>
     <div class="stackrow">
@@ -151,49 +150,50 @@ When I'm not busy studying, I enjoy watching animes/cartoons, exploring new plac
         <img class="portfolioimage" src="images/internships/latest3.jpg"></img>
     </div>
     <hr>
-    <h4>For more info, check out my <a href="http://www.github.com/EssWhyy">GITHUB</a> and my
-        <a href="https://docs.google.com/document/d/1FD45Qo6T3DATrPtYEtZWfxAGP7jmtx5G6T_eMqdaWkc/edit?usp=sharing">RESUME</a>!</h4>
+    <button type="button" class="btn btn-dark btn-lg btn-block">Checkout My Github!</button>
+    <br/>
+    <button type="button" class="btn btn-info btn-lg btn-block">And My Resume!</button>
     </div>
 
 </div>
 <!--Stack Showcase -->
 
 <!--Tuition Promotion -->
-<div class = banner>
-    <img class="banner-image" src="images/tuition/background.jpg"> </img>
+<div class = "banner" id = "banner4">
+    <!--<img class="banner-image" src="images/tuition/background.jpg"> </img>-->
     <div class="banner-heading4">
     <h2>Affordable Tuition Services</h2>
-    <div class = "stackrow">
-    
-    <h5 class = "tuitionlisting">
+    <h4 class = "tuitionlisting">
 
-            I offer very affordable tuition services for Math/Sciences: <br />
+            I offer affordable tuition services for Math/Sciences: <br />
             <br/>
             - O Level Math, A Math, Physics & Chemistry - $15/hour<br />
             - A Level H2 Math, Physics & Chemistry - $20/hour<br />
             - Python3 Homework/Project Help - Variable Rate<br />
             <br/>
-            
+    </h4>
+    <img class="portfolioimage" src="images/tuition/flyer.jpg"></img>
+    <h5 class = "tuitionlisting">
+            <br/>
             What you will get:<br/>
             - Qualified, Professional tutor with Top Math & Science Grades<br />
             - With experience running Teaching Workshops For Children & Students<br />
             - Extensive Repo of Notes, Past Year Papers<br />
             - Flexible Timings, Lesson Plans & Free Trial Available!<br />
+
+    <br/>
+    <br/>
+    For more info, check out my listing & contact me for a free trial!
     </h5>
 
-    <img class="portfolioimage" src="images/tuition/flyer.jpg"></img>
-    </div>
-
-    <br/>
-    <br/>
-    <h4>For more info, check out my <a href="#">Tuition Listing On Carousell</a> & contact me for a free trial!</h4>
+    <button type="button" class="btn btn-danger btn-lg">Carousell Listing</button>
+</div>
 </div>
 
 <!--Tuition Promotion -->
 
 <!--Blog Showcase -->
-<div class="banner">
-    <img class="banner-image" src="images/blogbackground.jpg"> </img>
+<div class="banner" id ="banner5">
     <div class="banner-heading5">
     <h2>I Have A Blog!</h2>
     <br/>
@@ -206,19 +206,20 @@ When I'm not busy studying, I enjoy watching animes/cartoons, exploring new plac
         <img class="portfolioimage" src="images/blog/latest3.jpg"></img>
     </div>
     <br/>
-    <h3>Check it out <a href="#">HERE!</a></h3>
+    <button type="button" class="btn btn-info btn-lg">Check it out Here!</button>
     </div>
 </div>
 <!--Blog Showcase -->
 
 <!--Contact Section -->
-<div class = "banner">
-    <img class="banner-image" src="images/contactbackground.jpg"> </img>
-    <div class="banner-heading6">
+<div class = "banner" id = "banner6">
+    <div class="banner-heading6" id = "banner6">
+        <br/>
+        <br/>
         <h2>Connect With Me</h2>
         <h4>I'm open to collaborations & internships, or if you just want to enquire about my projects or want to know more about me, feel free to drop me an email!</h4>
         <br/>
-        <button type="button" class="btn btn-success" onclick="location.href='mailto:swenyitang99@gmail.com';">Send A Message!</button>
+        <button type="button" class="btn btn-secondary btn-lg" onclick="location.href='mailto:swenyitang99@gmail.com';">Send A Message!</button>
         <br/>
         <br />
         <h4>Check out my Socials As Well!</h4>
@@ -233,7 +234,8 @@ When I'm not busy studying, I enjoy watching animes/cartoons, exploring new plac
             <a class="fa fa-reddit" href="http://www.reddit.com/u/Stefan0_">
             </a>
         </div>
-
+    <br />
+    <br />
 
     </div>
 </div>

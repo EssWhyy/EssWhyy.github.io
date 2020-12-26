@@ -7,11 +7,6 @@
 
 } 
 
-img{
-  max-width: 100%; /* Responsive Image Scaling */
-}
-
-
 /* Nav Bar */
 .topbar{
     position: fixed;
@@ -20,22 +15,49 @@ img{
 }
 /* Nav Bar */
 
-.banner{
+.banner{ 
     position: relative;
-
+    width: 100%;
+    background-size: cover;
+    background-position: center;
 }
 
-.banner-image{
-    height:100%;
-    width:100%;
-    background-color: #7e8186;
-    opacity:70%; 
+#banner1{
+    height: 60vw; /* 450px */
+    background-image: url("images/slide1.jpg");  
 }
+
+#banner2{
+    height: 60vw; 
+    background-image: url("images/profile_background.jpg");  
+}
+
+#banner3{
+    height: 160vw; 
+    background-color: #568cc9;
+}
+
+#banner4{
+    height: 80vw; 
+    background-image: url("images/tuition/background.jpg");
+}
+#banner5{
+    height: 60vw;
+    background-image: url("images/blog/background.jpg")
+}
+
+#banner6{
+    height: 80vm;
+    background-color: #568cc9;
+}
+
+
 
 .banner-heading {
     position: absolute; 
     top: 40%;
-    left: 14%;
+    left: 15%;
+    padding: 10px;
     padding: auto;
     color: white;
     text-shadow: 2px 2px 8px #ac9b9b;
@@ -46,7 +68,7 @@ img{
     position: absolute; 
     top: 10%;
     left: 0%;
-    padding: auto;
+    padding: 15px;
     text-align: center;
     color: white;
     text-shadow: 2px 2px 8px #ac9b9b;
@@ -57,7 +79,7 @@ img{
     position: absolute; 
     top: 5%;
     left: 4%;
-    padding: auto;
+    padding: 15px;
     text-align: center;
     color: white;
     text-shadow: 2px 2px 8px #ac9b9b;
@@ -72,7 +94,6 @@ img{
     text-align: center;
     color: white;
     text-shadow: 2px 2px 8px #ac9b9b;
-    
 }
 
 
@@ -85,7 +106,8 @@ img{
 .stackrow{
     display: flex;
     justify-content: space-evenly;
-    padding: 3%;
+    padding: 5%;
+    flex-wrap: wrap;
 
 }
 .stackimage{
@@ -94,18 +116,19 @@ img{
 }
 
 .portfolioimage{
-    width: 25%;
-    height: 25%;
+    width: 28%;
+    height: 28%;
 }
 /* Flex Box */
 
 .tuitionlisting{
-    text-align: left;
+    text-align: center;
+
 }
 
 .banner-heading5 {
     position: absolute; 
-    top: 15%;
+    top: 5%;
     left: 0%;
     padding: auto;
     text-align: center;
@@ -116,9 +139,9 @@ img{
 
 .banner-heading6 {
     position: absolute; 
-    top: 15%;
+    top: 20%;
     left: 0%;
-    padding: auto;
+    padding: 10px;
     text-align: center;
     color: white;
     text-shadow: 2px 2px 8px #ac9b9b;
