@@ -28,7 +28,7 @@
 }
 
 #banner2{
-    height: 140vw; 
+    height: 160vw; 
     background-image: url("images/profile_background.jpg");  
 }
 
@@ -119,6 +119,29 @@
     color: white;
     text-shadow: 2px 2px 8px #ac9b9b;
     
+}
+.hovertext{
+    transition: transform .2s;
+}
+
+.hide{
+    display: none;
+    text-align: center;
+    font-size: 100%;
+}
+
+.hovertext:hover + .hide {
+  transition: scale(1.2);
+  display: block;
+}
+
+
+.hoverexpand{
+    transition: transform .2s;
+}
+
+.hoverexpand:hover{
+    transform: scale(1.2);
 }
 
 #profile_pic{

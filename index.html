@@ -35,19 +35,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a id = "About" class="nav-link" href="#">About</a>
+                <a id = "About" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-                <a id = "Programming" class="nav-link" href="#">Programming</a>
+                <a id = "Programming" class="nav-link">Programming</a>
             </li>
             <li class="nav-item">
-                <a id = "Tuition" class="nav-link" href="#">Tuition</a>
+                <a id = "Tuition" class="nav-link">Tuition</a>
             </li>
             <li class="nav-item">
-                <a id = "Blog" class="nav-link" href="#">Blog</a>
+                <a id = "Blog" class="nav-link">Blog</a>
             </li>
             <li class="nav-item">
-                <a id = "Contact" class="nav-link" href="#">Contact</a>
+                <a id = "Contact" class="nav-link">Contact</a>
             </li>
         </ul>
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
@@ -81,11 +81,13 @@
 
 <!--Slideshow Banner -->
 <div class ="banner" id = "banner1">
-<div class = "banner-heading">
-    <h1>Welcome To The Official Website Of Sven Tang!</h1>
-    <hr>
-    <h3>Singaporean Computer Science Undergrad</h3>
-</div>
+    <div class="transparencylayer">
+    <div class = "banner-heading">
+        <h1>Welcome To The Official Website Of Sven Tang!</h1>
+        <hr>
+        <h3>Singaporean Computer Science Undergrad</h3>
+    </div>
+    </div>
 </div>
 <!--Slideshow Banner -->
 
@@ -126,29 +128,71 @@ When I'm not busy studying, I enjoy watching animes/cartoons, exploring new plac
     <hr>
     <h4>My current Stack</h4>
     <div class="stackrow">
-        <img class ="stackimage" src="images/languages/html5.png"></img>
-        <img class ="stackimage" src="images/languages/css.png"></img>
-        <img class ="stackimage" src="images/languages/js.png"></img>
-        <img class ="stackimage" src="images/languages/react.png"></img>
+        <img class ="stackimage hovertext" src="images/languages/html5.png"></img>
+        <div class ="hide">
+            <br />
+            HTML5<br/>
+            Proficient<br/>
+            &#9733 &#9733 &#9733 &#9733 &#9733
+        </div>
+        <img class ="stackimage hovertext" src="images/languages/css.png"></img>
+        <div class="hide">
+            <br />
+            CSS3<br/>
+            Proficient<br/>
+            &#9733 &#9733 &#9733 &#9733 &#9733
+        </div>
+        <img class ="stackimage hovertext" src="images/languages/js.png"></img>
+        <div class="hide">
+            <br />
+            JavaScript<br />
+            Experienced<br />
+            &#9733 &#9733 &#9733 &#9733 &#9734
+        </div>
+        <img class ="stackimage hovertext" src="images/languages/react.png"></img>
+        <div class="hide">
+            <br />
+            React.js<br />
+            Learning<br />
+            &#9733 &#9733 &#9734 &#9734 &#9734
+        </div>
     </div>
     <div class="stackrow">
-        <img class ="stackimage" src="images/languages/python.png"></img>
-        <img class ="stackimage" src="images/languages/java.png"></img>
-        <img class ="stackimage" src="images/languages/r.png"></img>
+        <img class ="stackimage hovertext" src="images/languages/python.png"></img>
+        <div class="hide">
+            <br />
+            Python3<br />
+            Proficient<br />
+            &#9733 &#9733 &#9733 &#9733 &#9733
+        </div>
+        <img class ="stackimage hovertext" src="images/languages/java.png"></img>
+        <div class="hide">
+            <br />
+            Java<br />
+            Experienced<br />
+            &#9733 &#9733 &#9733 &#9733 &#9734
+        </div>
+        <img class ="stackimage hovertext" src="images/languages/r.png"></img>
+        <div class="hide">
+            <br />
+            R<br />
+            Learning<br />
+            &#9733 &#9733 &#9733 &#9734 &#9734
+        </div>
     </div>
     <hr>
     <h4>Here's a brief snippet of some of my Projects:</h4>
     <div class = "stackrow">
-        <img class="portfolioimage" src="images/projects/latest1.jpg"></img>
-        <img class="portfolioimage" src="images/projects/latest2.jpg"></img>
-        <img class="portfolioimage" src="images/projects/latest3.jpg"></img>
+        <img class="portfolioimage hoverexpand" src="images/projects/latest1.jpg"></img>
+        <img class="portfolioimage hoverexpand" src="images/projects/latest2.jpg"></img>
+        <img class="portfolioimage hoverexpand" src="images/projects/latest3.jpg"></img>
     </div>
     <hr>
     <h4>And some of my Internship Experiences:</h4>
     <div class="stackrow">
-        <img class="portfolioimage" src="images/internships/latest1.jpg"></img>
-        <img class="portfolioimage" src="images/internships/latest2.jpg"></img>
-        <img class="portfolioimage" src="images/internships/latest3.jpg"></img>
+        <img class="portfolioimage hoverexpand" src="images/internships/latest1.jpg"></img>
+        <img class="portfolioimage hoverexpand" src="images/internships/latest2.jpg"></img>
+        <img class="portfolioimage hoverexpand" src="images/internships/latest3.jpg"></img>
     </div>
     <hr>
     <button type="button" class="btn btn-dark btn-lg btn-block">Checkout My Github!</button>
@@ -173,7 +217,7 @@ When I'm not busy studying, I enjoy watching animes/cartoons, exploring new plac
             - Python3 Homework/Project Help - Variable Rate<br />
             <br/>
     </h4>
-    <img class="portfolioimage" src="images/tuition/flyer.jpg"></img>
+    <img class="portfolioimage hoverexpand" src="images/tuition/flyer.jpg"></img>
     <h5 class = "tuitionlisting">
             <br/>
             What you will get:<br/>
@@ -202,9 +246,9 @@ When I'm not busy studying, I enjoy watching animes/cartoons, exploring new plac
     places I went to, shows that I watched and various other random stuff.</h3> 
     <br/>
     <div class="stackrow">
-        <img class="portfolioimage" src="images/blog/latest1.jpg"></img>
-        <img class="portfolioimage" src="images/blog/latest2.jpg"></img>
-        <img class="portfolioimage" src="images/blog/latest3.jpg"></img>
+        <img class="portfolioimage hoverexpand" src="images/blog/latest1.jpg"></img>
+        <img class="portfolioimage hoverexpand" src="images/blog/latest2.jpg"></img>
+        <img class="portfolioimage hoverexpand" src="images/blog/latest3.jpg"></img>
     </div>
     <br/>
     <button type="button" class="btn btn-info btn-lg">Check it out Here!</button>
@@ -220,9 +264,14 @@ When I'm not busy studying, I enjoy watching animes/cartoons, exploring new plac
         <h2>Connect With Me</h2>
         <h4>I'm open to collaborations & internships, or if you just want to enquire about my projects or want to know more about me, feel free to drop me an email!</h4>
         <br/>
-        <button type="button" class="btn btn-secondary btn-lg" onclick="location.href='mailto:swenyitang99@gmail.com';">Send A Message!</button>
+        <button type="button" class="btn btn-secondary btn-lg" onclick="location.href='mailto:swenyitang99@gmail.com';">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope"
+            viewBox="0 0 16 16">
+            <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+        </svg>  Send A Message!</button>
         <br/>
-        <br />
+        <br/>
         <h4>Check out my Socials As Well!</h4>
 
         <div id = "sociallisting" class="stackrow">
