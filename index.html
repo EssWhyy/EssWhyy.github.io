@@ -26,7 +26,7 @@
 
 <!--Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light topbar">
-    <a class="navbar-brand" href="#">Sven's Site</a>
+    <a class="navbar-brand" href="#">Sven Tang</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -35,19 +35,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a id = "About" class="nav-link">About</a>
+                <a id = "About" class="nav-link" href = "#banner2">About</a>
             </li>
             <li class="nav-item">
-                <a id = "Programming" class="nav-link">Programming</a>
+                <a id = "Programming" class="nav-link" href = "#banner3">Programming</a>
             </li>
             <li class="nav-item">
-                <a id = "Tuition" class="nav-link">Tuition</a>
+                <a id = "Tuition" class="nav-link" href = "#banner4">Tuition</a>
             </li>
             <li class="nav-item">
-                <a id = "Blog" class="nav-link">Blog</a>
+                <a id = "Blog" class="nav-link" href = "#banner5">Blog</a>
             </li>
             <li class="nav-item">
-                <a id = "Contact" class="nav-link">Contact</a>
+                <a id = "Contact" class="nav-link" href = "#banner6">Contact</a>
             </li>
         </ul>
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
@@ -81,11 +81,18 @@
 
 <!--Slideshow Banner -->
 <div class ="banner" id = "banner1">
+    <div id = "slideshow">
+        <img class = "slide" id = "slide2" src= "images/slides/slide2.jpg"></img>
+        <img class = "slide" id = "slide3" src= "images/slides/slide3.jpg"></img>
+        <img class = "slide" id = "slide4" src= "images/slides/slide4.jpg"></img>
+    </div>
     <div class="transparencylayer">
     <div class = "banner-heading">
         <h1>Welcome To The Official Website Of Sven Tang!</h1>
         <hr>
-        <h3>Singaporean Computer Science Undergrad</h3>
+        <h3>Singaporean Computer Science Undergraduate</h3>
+
+        <div id="arrow"></div>
     </div>
     </div>
 </div>
@@ -96,11 +103,11 @@
 <div class= "banner" id = "banner2">
 
 <div class = "banner-heading2"> 
-<img id="profile_pic" src="images/headshot.png"></img>
+<img id="profile_pic" src="images/profile.png"></img>
 <h2> 
 Hey there!
 </h2>
-<h5>I'm Sven, a 1st year NUS Computer Science undergrad.<br />
+<h5>I'm Sven, a 1st year Computer Science undergrad from NUS.<br />
 I'm interested in the fields of Data Analytics & Artificial Intelligence.<br />
 When I'm not busy studying, I enjoy watching animes/cartoons, exploring new places & creating dank memes.
 </h5>
@@ -121,8 +128,8 @@ When I'm not busy studying, I enjoy watching animes/cartoons, exploring new plac
     <h2>Experienced Developer</h2>
     <br/>
     <h5> 
-    I have been into coding since age 16 and have 5 years of experience with front & back-end development. <br/>
-    My projects currently consist of small scale data analysis and visuals, and making web pages like this one!<br/>
+    I have been into coding since age 16 and have 5 years experience with front & back-end development. <br/>
+    My projects currently consist of small scale data analysis and visuals, and making web pages/apps<br/>
     I'm working towards learning advanced web application development and large scale data analysis and AI.
     </h5>
     <hr>
@@ -197,7 +204,7 @@ When I'm not busy studying, I enjoy watching animes/cartoons, exploring new plac
     <hr>
     <button type="button" class="btn btn-dark btn-lg btn-block">Checkout My Github!</button>
     <br/>
-    <button type="button" class="btn btn-info btn-lg btn-block">And My Resume!</button>
+    <button type="button" class="btn btn-info btn-lg btn-block">And My LinkedIn Page!</button>
     </div>
 
 </div>
@@ -206,6 +213,7 @@ When I'm not busy studying, I enjoy watching animes/cartoons, exploring new plac
 <!--Tuition Promotion -->
 <div class = "banner" id = "banner4">
     <!--<img class="banner-image" src="images/tuition/background.jpg"> </img>-->
+    <div class="transparencylayer">
     <div class="banner-heading4">
     <h2>Affordable Tuition Services</h2>
     <h4 class = "tuitionlisting">
@@ -232,6 +240,7 @@ When I'm not busy studying, I enjoy watching animes/cartoons, exploring new plac
     </h5>
 
     <button type="button" class="btn btn-danger btn-lg">Carousell Listing</button>
+    </div>
 </div>
 </div>
 
@@ -239,6 +248,7 @@ When I'm not busy studying, I enjoy watching animes/cartoons, exploring new plac
 
 <!--Blog Showcase -->
 <div class="banner" id ="banner5">
+    <div class="transparencylayer">
     <div class="banner-heading5">
     <h2>I Have A Blog!</h2>
     <br/>
@@ -253,6 +263,7 @@ When I'm not busy studying, I enjoy watching animes/cartoons, exploring new plac
     <br/>
     <button type="button" class="btn btn-info btn-lg">Check it out Here!</button>
     </div>
+    </div>
 </div>
 <!--Blog Showcase -->
 
@@ -262,7 +273,12 @@ When I'm not busy studying, I enjoy watching animes/cartoons, exploring new plac
         <br/>
         <br/>
         <h2>Connect With Me</h2>
-        <h4>I'm open to collaborations & internships, or if you just want to enquire about my projects or want to know more about me, feel free to drop me an email!</h4>
+        <br/>
+        <h4>
+            I'm open to collaborations & internships! <br/>
+            If you want to enquire about my projects or services, <br/>
+            feel free to drop me an email!
+        </h4>
         <br/>
         <button type="button" class="btn btn-secondary btn-lg" onclick="location.href='mailto:swenyitang99@gmail.com';">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope"
@@ -286,9 +302,15 @@ When I'm not busy studying, I enjoy watching animes/cartoons, exploring new plac
         </div>
     <br />
     <br />
+    
+    <div class="footer">
+        <p>&#169 2021 Sven Tang; Made using Github Pages</p>
+    </div>
 
     </div>
 </div>
+
+
 <!--Contact Section -->
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -300,9 +322,10 @@ When I'm not busy studying, I enjoy watching animes/cartoons, exploring new plac
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="pulsate.js"></script>
 <script src="script.js"></script>
 
 </body>
+
 
 </html>

@@ -4,8 +4,13 @@
     padding: 0;
     text-align: center;
     font-size: 1.25vw; /* Responsive Text Size */
+    scroll-behavior: smooth;
 
 } 
+
+h4, h5 {
+    line-height: 150%;
+}
 
 /* Nav Bar */
 .topbar{
@@ -24,7 +29,7 @@
 
 #banner1{
     height: 60vw; /* 450px */
-    background-image: url("images/slide1.jpg");  
+    background-image: url("images/slides/slide1.jpg");  
 }
 
 #banner2{
@@ -34,11 +39,11 @@
 
 #banner3{
     height: 160vw; 
-    background-color: #568cc9;
+    background-color: #27578e;
 }
 
 #banner4{
-    height: 80vw; 
+    height: 90vw; 
     background-image: url("images/tuition/background.jpg");
 }
 #banner5{
@@ -51,14 +56,84 @@
     background-color: #568cc9;
 }
 
+@keyframes cfFadeInOut {
+  0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+
+
+.slide{
+    position: absolute;
+    left:0;
+    max-width: 100%;
+    object-fit: contain;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    animation-name: cfFadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+}
+
+#slide2 {
+  animation-delay: 6s;
+  object-fit: contain;
+}
+#slide3 {
+  animation-delay: 3s;
+  object-fit: contain;
+}
+#slide4 {
+  animation-delay: 0;
+  object-fit: contain;
+}
+
 
 .transparencylayer {
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.transparencylayer2 {
+    background-color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#arrow {
+    position: absolute;
+    border-right:20px solid white;
+    border-bottom:20px solid white;
+    width:150px;
+    height:150px;
+    left:45%;
+    top: 150%;
+
+    transform: rotate(-315deg) scale(0.3,0.3);
+    filter: drop-shadow(0 0 10px rgb(124, 124, 124));
 }
 
 .banner-heading {
@@ -119,7 +194,8 @@
 .banner-heading6 {
     position: absolute; 
     top: 20%;
-    left: 0%;
+    left: 0;
+    right: 0;
     padding: 15px;
     text-align: center;
     color: white;
@@ -155,6 +231,7 @@
 #profile_pic{
     height: 20%;
     width: 20%;
+    padding-bottom: 10px;
 }
 
 .stackrow{
@@ -175,6 +252,7 @@
     width: 28%;
     height: 28%;
 }
+
 /* Flex Box */
 
 
@@ -211,4 +289,14 @@
 #sociallisting .fa-reddit {
   background: #fc4604;
   color: white;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  line-height: 20%;
 }

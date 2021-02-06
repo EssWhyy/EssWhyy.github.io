@@ -1,14 +1,14 @@
 //Fact Generator
-var factlist = ["I was Time's Person of The Year for 2006!",
-"I'm pretty skillful at playing video games... and hacking them.",
-"I stand firm of my opinion that cartoons are not just for kids, there are some can be enjoyed by all ages!",
+var factlist = ["I was Time's Person of The Year for 2006! :)",
+"I like gaming, I have over 30 different console emulators installed on my PC!",
+"While I do enjoy watching anime, I also like watching cartoons! It's not strictly for kids!",
 "I learnt cycling and swimming at the very young age... of 19. You're never too old to learn something new!",
-"I scored the lowest in my class for PSLE, but still ended up reaching my dream course in university!",
-"One of my regrets in life is not making more friends back in school. It's way harder to build relations as you get older.",
-"I have 0 interest in anything related to National Service, no idea why guys like to discuss about it.",
-"I actually dislike reading novels & fictional works, I prefer non-fiction books & movies!",
-"One of my future ambitions is to start a web comic series about life in Singapore.",
-"Fact Number 10"];
+"I scored the lowest in my class for PSLE, but it has not stopped me from reaching my desired uni course!",
+"Along with programming, I am also skilled in graphic design, making data visuals, infographics and digital art",
+"I have 0 interest in anything related to National Service.",
+"I actually dislike reading novels & fictional books, I prefer non-fiction & informative magazines!",
+"One of my future ambitions is to start a web comic series about my life in Singapore!",
+"I have been to Japan, Taiwan, New Zealand & Australia, I hope to visit Europe & The Americas in the future."];
 
 function shuffleArray(array) {
     var array2 = array;
@@ -29,46 +29,32 @@ function genFact(){
     document.getElementById("fact").innerHTML = randomfact;
     startindex++;
 }
+
+function rouletteFact(){ //Roulette Effect for Fact Generator
+    var i;
+    for (i = 0; i < 101; i++) {
+        genFact();
+    }
+}
+
 //Fact Generator
 
-//Nav Bar Scroller
 
-$("#About").click(function () {
-    $(["html", "body"]).animate({
-        scrollTop: $("#Banner2").offset().top
-    }, 2000);
+//Pulsating effects
+$("#arrow").pulsate({
+    color: $(".banner-heading").css("background-color"),
+    glow: true,
+});
+
+$(".btn-success").pulsate({
+    color: $(".banner-heading").css("background-color"),
+    glow: true,
+});
+
+$(".btn-danger").pulsate({
+    color: $(".banner-heading").css("background-color"),
+    glow: true,
 });
 
 
-$("#Programming").click(function () {
-    $(["html", "body"]).animate({
-        scrollTop: $("#Banner3").offset().top
-    }, 2000);
-});
-
-$("#About").click(function () {
-    $(["html", "body"]).animate({
-        scrollTop: $("#Banner2").offset().top
-    }, 2000);
-});
-
-$("#About").click(function () {
-    $(["html", "body"]).animate({
-        scrollTop: $("#Banner2").offset().top
-    }, 2000);
-});
-
-$("#About").click(function () {
-    $(["html", "body"]).animate({
-        scrollTop: $("#Banner2").offset().top
-    }, 2000);
-});
-
-
-//Nav Bar Scroller
-
-//Banner Transition
-
-//Banner Transition
-
-
+//Pulsating effects
