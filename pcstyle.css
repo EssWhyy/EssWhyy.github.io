@@ -253,6 +253,47 @@ h4, h5 {
     height: 28%;
 }
 
+.portfoliomodal {
+  width: 28%;
+  height: 28%;
+}
+
+.portfolioimage2 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  color: #000000;
+}
+
+.captionblock {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+
+}
+
+.portfoliomodal:hover .portfolioimage2 {
+  opacity: 0.5;
+}
+
+.portfoliomodal:hover .captionblock {
+  opacity: 1;
+}
+
+.captiontext {
+  text-align: center;
+  font-size: 2vw;
+  color: black;
+  text-shadow: 2px 2px #747474;
+}
+
 /* Flex Box */
 
 
