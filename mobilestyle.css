@@ -29,7 +29,7 @@
 }
 
 #banner2{
-    height: 160vw; 
+    height: 175vw; 
     background-image: url("images/profile_background.jpg");  
 }
 
@@ -39,7 +39,7 @@
 }
 
 #banner4{
-    height: 240vw; 
+    height: 300vw; 
     background-image: url("images/tuition/background.jpg");
 }
 #banner5{
@@ -188,8 +188,8 @@
 }
 
 .portfoliomodal {
-  width: 75%;
-  height: 75%;
+  width: 80%;
+  height:80%;
 }
 
 .portfolioimage2 {
@@ -200,6 +200,7 @@
   transition: .5s ease;
   backface-visibility: hidden;
   color: #000000;
+  left: 5%;
 }
 
 .captionblock {
@@ -208,6 +209,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  text-align: center;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 
@@ -228,6 +230,10 @@
   text-shadow: 2px 2px #747474;
 }
 
+.skillsetimage{
+    width: 70%;
+    height: 70%;
+}
 /* Flex Box */
 
 
