@@ -1,15 +1,20 @@
 # EssWhyy.github.io
-Personal Website Of Sven Tang (that's me)
+Personal Website Of Sven Tang (that's me), just a brief front end site featuring a description of myself, my stack, and my socials.
 
-## Project Progress:
-* Banner Slideshow - CURRENTLY HERE
-* Nav Bar/Social Bar
-* Short Bio/Fact Generator
-* Programming Stack Showcase
-* Tuition Graph & Advert
-* Links To Blogs & Socials
-* Contact Email Form
+## Bug Fixes:
+* Fix slideshow inconsistent timing
+* Fix Stuttering Images in Stack Showcase on Hover
 
-Additional Stuff:
-* React.js to enhance flow/appearance
-* Custom Web Domain
+## Improvements:
+* React.js to enhance appearance/page load
+* Embedded blog posts to Blog section
+* Custom web domain
+
+### Project Progress:
+* Banner Slideshow - DONE
+* Nav Bar/Social Bar - DONE
+* Short Bio/Fact Generator - DONE
+* Programming Stack Showcase - DONE
+* Tuition Graph & Advert - DONE
+* Blog Showcase - DONE
+* Links To Blogs & Socials - DONE
