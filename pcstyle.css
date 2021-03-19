@@ -29,7 +29,7 @@ h4, h5 {
 
 #banner1{
     height: 60vw; /* 450px */
-    background-image: url("images/slides/slide1.jpg");  
+    background-image: url("images/slides/pcbanner.png");  
 }
 
 #banner2{
@@ -57,21 +57,11 @@ h4, h5 {
 }
 
 @keyframes cfFadeInOut {
-  0% {
-    opacity:1;
-  }
-  17% {
-    opacity:1;
-  }
-  25% {
-    opacity:0;
-  }
-  92% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
 }
 
 
@@ -81,26 +71,27 @@ h4, h5 {
     left:0;
     max-width: 100%;
     object-fit: contain;
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
     animation-name: cfFadeInOut;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
     animation-duration: 12s;
+
 }
 
+#slide1 {
+  object-fit: contain;
+}
 #slide2 {
-  animation-delay: 6s;
+  animation-delay: -9s;
   object-fit: contain;
 }
 #slide3 {
-  animation-delay: 3s;
+  animation-delay: -6s;
   object-fit: contain;
 }
 #slide4 {
-  animation-delay: 0;
+  animation-delay: -3s;
   object-fit: contain;
 }
 
