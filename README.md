@@ -2,7 +2,7 @@
 Personal Website Of Sven Tang (that's me), just a brief front end site featuring a description of myself, my stack, and my socials.
 
 ## Bug Fixes:
-* Fix slideshow inconsistent timing
+* Fix slideshow inconsistent timing - DONE
 * Fix Stuttering Images in Stack Showcase on Hover
 
 ## Improvements:
