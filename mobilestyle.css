@@ -140,9 +140,7 @@
     text-shadow: 2px 2px 8px #ac9b9b;
     
 }
-.hovertext{
-    transition: transform .2s;
-}
+
 
 .hide{
     display: none;

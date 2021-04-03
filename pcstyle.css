@@ -198,16 +198,15 @@ h4, h5 {
     transition: transform .2s;
 }
 
-.hide{
-    display: none;
-    text-align: center;
-    font-size: 150%;
+.hovertext:hover{
+  opacity: 0.7;
 }
 
-.hovertext:hover + .hide {
-  transition: scale(1);
-  display: block;
+.hide{
+    display: none;
 }
+
+
 
 
 .hoverexpand{
