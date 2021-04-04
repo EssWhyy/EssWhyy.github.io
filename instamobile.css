@@ -1,0 +1,30 @@
+
+#banner1{
+    height: 200vw; /* 450px */
+    background-image: url("images/background_mobile.jpg");  
+}
+
+#banner2{
+    height: 195vw; 
+    background-image: url("images/profile_background.jpg");  
+}
+
+#banner3{
+    height: 510vw; 
+    background-color: #27578e;
+}
+
+#banner4{
+    height: 340vw; 
+    background-image: url("images/tuition/background.jpg");
+}
+#banner5{
+    height: 250vw;
+    background-image: url("images/blog/background.jpg")
+}
+
+#banner6{
+    height: 160vm;
+    background-color: #568cc9;
+}
+
