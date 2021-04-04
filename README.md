@@ -3,7 +3,7 @@ Personal Website Of Sven Tang (that's me), just a brief front end site featuring
 
 ## Bug Fixes:
 * Fix slideshow inconsistent timing - DONE
-* Fix Stuttering Images in Stack Showcase on Hover
+* Fix Stuttering Images in Stack Showcase on Hover - DONE
 
 ## Improvements:
 * React.js to enhance appearance/page load
