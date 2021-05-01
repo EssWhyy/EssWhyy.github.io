@@ -46,7 +46,7 @@ $("#arrow").pulsate({
     glow: true,
 });
 
-$(".btn-success").pulsate({
+$(".btn-primary").pulsate({
     color: $(".banner-heading").css("background-color"),
     glow: true,
 });

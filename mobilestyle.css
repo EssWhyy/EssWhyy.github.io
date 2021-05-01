@@ -1,5 +1,5 @@
 *{
-    font-family: 'Arvo', serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0; /* To prevent white borders */
     padding: 0;
     text-align: center;
@@ -39,7 +39,7 @@
 }
 
 #banner4{
-    height: 300vw; 
+    height: 340vw; 
     background-image: url("images/tuition/background.jpg");
 }
 #banner5{
@@ -231,6 +231,7 @@
 .skillsetimage{
     width: 70%;
     height: 70%;
+    padding: 5%;
 }
 /* Flex Box */
 
