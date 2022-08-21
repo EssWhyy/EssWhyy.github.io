@@ -1,37 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+import React from 'react'
+import IMAGES from './images.js'
 
-<head>
+function Home() {
+    return (
+    <div>
 
-<meta charset="utf-8">
-<meta name="HandheldFriendly" content="true" />
-<meta name="MobileOptimized" content="320" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Swen's Site</title>
-<meta name="description" content="Official Website Of Swen Tang, Computer Science undergrad and Geek Enthusiast.">
-
-<!--Bootstrap, Custom Icons, Custom Fonts, then personal CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 600px)" href="pcstyle.css">
-<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 600px)" href="mobilestyle.css">
-
-</head>
-
-<body>
-
-<!--Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light topbar">
-    <a class="navbar-brand" href="#">Swen Tang</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+    {/*<nav class="navbar navbar-expand-lg navbar-light bg-light topbar">
+        <a class="navbar-brand" href="#">Swen Tang</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
@@ -77,31 +56,27 @@
     </div>
 
     </div>
-</nav>
-<!--Navigation Bar -->
+    </nav>*/}
 
-<!--Slideshow Banner -->
-<div class ="banner" id = "banner1">
+
+<div className ="banner" id = "banner1">
     <div id = "slideshow">
-        <img class = "slide" id = "slide1" src= "images/slides/slide1.jpg"></img>
-        <img class = "slide" id = "slide2" src= "images/slides/slide2.jpg"></img>
-        <img class = "slide" id = "slide3" src= "images/slides/slide3.jpg"></img>
-        <img class = "slide" id = "slide4" src= "images/slides/slide4.jpg"></img>
+        <img className = "slide" id = "slide1" src= {require('../images/slides/slide1.jpg')}></img>
+        <img className = "slide" id = "slide2" src= {require('../images/slides/slide2.jpg')}></img>
+        <img className = "slide" id = "slide3" src= {require('../images/slides/slide3.jpg')}></img>
+        <img className = "slide" id = "slide4" src= {require('../images/slides/slide4.jpg')}></img>
     </div>
-    <div class="transparencylayer">
-    <div class = "banner-heading">
+    <div className = "transparencylayer">
+    <div className = "banner-heading">
         <h1>Swen Tang</h1>
-        <hr>
-        <h3>Singaporean Computer Science Undergraduate & Developer</h3>
+        <h3>Singaporean Computer Science Undergraduate and Developer</h3>
 
         <a id="arrow" href = "#banner2"></a>
     </div>
     </div>
 </div>
-<!--Slideshow Banner -->
 
-<!--Bio Banner -->
-
+{/*
 <div class= "banner" id = "banner2">
 
 <div class = "banner-heading2"> 
@@ -110,7 +85,7 @@
 Hello!
 </h2>
 <h5>I'm Swen, a penultimate year Computer Science student from NUS.
-I'm interested in the fields of Full Stack Web & Software Development & UI/UX Design
+I'm interested in the fields of Full Stack Web and Software Development and UI/UX Design
 
 <br />
 Here you can find some of the work that I have done, the skills I offer, as well as other interesting things about me.
@@ -127,65 +102,62 @@ Here you can find some of the work that I have done, the skills I offer, as well
     I draw my learning from multiple internships and independent projects.
     <br/>
     </h5>
-    <hr>
-    <!--Stack Showcase, Using React-->
+
     <h3>Stack</h3>
     <div id="techstack"></div> 
-    <hr>
+
     <h3>Recent Projects:</h3>
     <div class = "stackrow">
         <div class="portfoliomodal hoverexpand">
-            <img src="images/projects/latest1.jpg" class="portfolioimage2">
+            <img src="../../public/assets/images/projects/latest1.jpg" class="portfolioimage2"/>
             <div class="captionblock">
                 <div class="captiontext">TrainGoWhere</div>
             </div>
         </div>
         <div class="portfoliomodal hoverexpand">
-            <img src="images/projects/latest2.jpg" class="portfolioimage2">
+            <img src="images/projects/latest2.jpg" class="portfolioimage2"/>
             <div class="captionblock">
                 <div class="captiontext">NUS ModReg Demand (WIP)</div>
             </div>
         </div>
         <div class="portfoliomodal hoverexpand">
-            <img src="images/projects/latest3.jpg" class="portfolioimage2">
+            <img src="images/projects/latest3.jpg" class="portfolioimage2"/>
             <div class="captionblock">
                 <div class="captiontext">Uplifting News (WIP)</div>
             </div>
         </div>
 
     </div>
-    <hr>
     <h3>Work/Intern Experience:</h3>
     <div class="stackrow">
         <div class="portfoliomodal hoverexpand">
-            <img src="images/internships/latest1.jpg" class="portfolioimage2">
+            <img src="images/internships/latest1.jpg" class="portfolioimage2"/>
             <div class="captionblock">
                 <div class="captiontext">A*STAR SimTech (Nov 2016 - Jan 2017)</div>
             </div>
         </div>
         <div class="portfoliomodal hoverexpand">
-            <img src="images/internships/latest2.jpg" class="portfolioimage2">
+            <img src="images/internships/latest2.jpg" class="portfolioimage2"/>
             <div class="captionblock">
                 <div class="captiontext">Venture Corporation Limited (Jan - Apr 2020)</div>
             </div>
         </div>
         <div class="portfoliomodal hoverexpand">
-            <img src="images/internships/latest3.jpg" class="portfolioimage2">
+            <img src="images/internships/latest3.jpg" class="portfolioimage2"/>
             <div class="captionblock">
                 <div class="captiontext">Urban Redevelopment Authority (May - Sep 2022)</div>
             </div>
         </div>
     </div>
-    <hr>
+    
     <button type="button" onclick= "location.href='http://www.github.com/EssWhyy';" class="btn btn-dark btn-lg btn-block">Also check out my Github!</button>
     <br/>
     <button type="button" onclick= "location.href='http://www.linkedin.com/in/swen-yi-tang-895b6b1b2';"class="btn btn-info btn-lg btn-block">And my LinkedIn page!</button>
     </div>
 
 </div>
-<!--Stack Showcase -->
 
-<!--Places Showcase -->
+
 <div class="banner" id ="banner5">
     <div class="transparencylayer">
     <div class="banner-heading5">
@@ -208,9 +180,7 @@ Here you can find some of the work that I have done, the skills I offer, as well
     </div>
     </div>
 </div>
-<!--Blog Showcase -->
 
-<!--Contact Section -->
 <div class = "banner" id = "banner6">
     <div class="banner-heading6" id = "banner6">
         <br/>
@@ -218,7 +188,7 @@ Here you can find some of the work that I have done, the skills I offer, as well
         <h2>Connect With Me</h2>
         <br/>
         <h4>
-            I'm open to collaborations & internships! <br/>
+            I'm open to collaborations and internships! <br/>
             Feel free to drop me an email<br />
             if you want to discuss about my projects or services!
         </h4>
@@ -247,49 +217,17 @@ Here you can find some of the work that I have done, the skills I offer, as well
     <br />
     
     <div class="footer">
-        <p>&#169 2022 Sven Tang; Hosted On Github Pages</p>
+        <p>Copyright 2022 Sven Tang; Hosted On Github Pages</p>
     </div>
 
+        </div>
     </div>
-</div>
+    */}
 
+    </div>
+    
+    )
 
-<!--Contact Section -->
+};
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-
-<!-- Load React, MUI, Babel -->
-<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
-<script src="https://unpkg.com/@mui/material@latest/umd/material-ui.development.js" crossorigin></script>
-<script src="https://unpkg.com/@babel/standalone/babel.min.js" crossorigin></script>
-<script src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js" crossorigin></script>
-
-<!-- Load React components. -->
-<script type="text/babel">
-    const {Badge, MailIcon} = MaterialUI; // Components are available in MaterialUI object
-    ReactDOM.render(
-        <Badge badgeContent={4} color="primary">
-            <MailIcon color="action" />
-        </Badge>, 
-      document.getElementById("techstack") 
-    );
-
-
-</script>
-
-
-<script src="instafix.js"></script>
-<script src="pulsate.js"></script>
-
-
-</body>
-
-
-</html>
+export default Home
