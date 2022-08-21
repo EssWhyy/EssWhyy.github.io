@@ -95,3 +95,18 @@
 
   };
 })( jQuery );
+
+$("#arrow").pulsate({
+  color: $(".banner-heading").css("background-color"),
+  glow: true,
+});
+
+$(".btn-primary").pulsate({
+  color: $(".banner-heading").css("background-color"),
+  glow: true,
+});
+
+$(".btn-secondary").pulsate({
+  color: $(".banner-heading").css("background-color"),
+  glow: true,
+});
