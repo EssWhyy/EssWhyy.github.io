@@ -27,7 +27,7 @@
 
 <!--Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light topbar">
-    <a class="navbar-brand" href="#">Sven Tang</a>
+    <a class="navbar-brand" href="#">Swen Tang</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -36,16 +36,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a id = "About" class="nav-link" href = "#banner2">About</a>
-            </li>
-            <li class="nav-item">
                 <a id = "Programming" class="nav-link" href = "#banner3">Stack</a>
             </li>
             <li class="nav-item">
-                <a id = "Blog" class="nav-link" href = "#banner5">Other Projects</a>
+                <a id = "Blog" class="nav-link" href = "#banner4">Projects</a>
             </li>
             <li class="nav-item">
-                <a id = "Contact" class="nav-link" href = "#banner6">Contact</a>
+                <a id = "Blog" class="nav-link" href = "#banner5">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a id = "Contact" class="nav-link" href = "#banner6">Travels</a>
+            </li>
+            <li class="nav-item">
+                <a id = "Blog" class="nav-link" href = "#banner5">Socials</a>
             </li>
         </ul>
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
@@ -107,53 +110,29 @@
 Hello!
 </h2>
 <h5>I'm Swen, a penultimate year Computer Science student from NUS.
-I'm interested in the fields of Software Development, Web Development & Data Analytics
+I'm interested in the fields of Full Stack Web & Software Development & UI/UX Design
 
 <br />
 Here you can find some of the work that I have done, the skills I offer, as well as other interesting things about me.
 </h5>
 <br/>
-<!--button type="button" onclick="genFact();" class="btn btn-primary btn-lg">More Fun Facts About Me</button -->
 </div>
 </div>
 
-<!--Bio Banner -->
-
-<!--Stack Showcase -->
 <div class="banner" id = "banner3">
 <div class= "banner-heading3">
-    <h2>I'm A Developer!</h2>
-    <br/>
     <h5 style="line-height: 150%;"> 
-    I've been coding since the age of 16 and am familiar with various langugages and tools for 
-    full stack software and web development 
-    <br/>
+    I'm a fullstack developer who is most passionate about web development. 
+    I have experience working in various front-end and back-end technologies and tools.
+    I draw my learning from multiple internships and independent projects.
     <br/>
     </h5>
     <hr>
-    <h3>My Stack</h3>
-    <div class="stackrow">
-        <img class ="stackimage hovertext" src="images/languages/html5.png" title = "React"></img>
-        
-        <img class ="stackimage hovertext" src="images/languages/css.png" title = "Node.js"></img>
-        
-        <img class ="stackimage hovertext" src="images/languages/js.png" title = "Python3"></img>
-        
-        <img class ="stackimage hovertext" src="images/languages/react.png" title = "Java"></img>
-        
-    </div>
-    <div class="stackrow">
-        <img class ="stackimage hovertext" src="images/languages/python.png" title = "SQL"></img>
-        
-        <img class ="stackimage hovertext" src="images/languages/java.png" title = "Heroku"></img>
-        
-        <img class ="stackimage hovertext" src="images/languages/r.png" title = "Google Cloud"></img>
-        
-        <img class="stackimage hovertext" src="images/languages/c.png" title = "Git"></img>
-        
-    </div>
+    <!--Stack Showcase, Using React-->
+    <h3>Stack</h3>
+    <div id="techstack"></div> 
     <hr>
-    <h3>Some of My Recent Projects:</h3>
+    <h3>Recent Projects:</h3>
     <div class = "stackrow">
         <div class="portfoliomodal hoverexpand">
             <img src="images/projects/latest1.jpg" class="portfolioimage2">
@@ -164,19 +143,19 @@ Here you can find some of the work that I have done, the skills I offer, as well
         <div class="portfoliomodal hoverexpand">
             <img src="images/projects/latest2.jpg" class="portfolioimage2">
             <div class="captionblock">
-                <div class="captiontext">How to Leetcode (WIP)</div>
+                <div class="captiontext">NUS ModReg Demand (WIP)</div>
             </div>
         </div>
         <div class="portfoliomodal hoverexpand">
             <img src="images/projects/latest3.jpg" class="portfolioimage2">
             <div class="captionblock">
-                <div class="captiontext">Wholesome Stuff (WIP)</div>
+                <div class="captiontext">Uplifting News (WIP)</div>
             </div>
         </div>
 
     </div>
     <hr>
-    <h3>And some of my Internship Experiences:</h3>
+    <h3>Work/Intern Experience:</h3>
     <div class="stackrow">
         <div class="portfoliomodal hoverexpand">
             <img src="images/internships/latest1.jpg" class="portfolioimage2">
@@ -206,7 +185,7 @@ Here you can find some of the work that I have done, the skills I offer, as well
 </div>
 <!--Stack Showcase -->
 
-<!--Blog Showcase -->
+<!--Places Showcase -->
 <div class="banner" id ="banner5">
     <div class="transparencylayer">
     <div class="banner-heading5">
@@ -284,9 +263,30 @@ Here you can find some of the work that I have done, the skills I offer, as well
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 
+<!-- Load React, MUI, Babel -->
+<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/@mui/material@latest/umd/material-ui.development.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js" crossorigin></script>
+
+<!-- Load React components. -->
+<script type="text/babel">
+    const {Badge, MailIcon} = MaterialUI; // Components are available in MaterialUI object
+    ReactDOM.render(
+        <Badge badgeContent={4} color="primary">
+            <MailIcon color="action" />
+        </Badge>, 
+      document.getElementById("techstack") 
+    );
+
+
+</script>
+
+
 <script src="instafix.js"></script>
 <script src="pulsate.js"></script>
-<script src="script.js"></script>
 
 
 </body>

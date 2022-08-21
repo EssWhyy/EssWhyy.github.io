@@ -32,8 +32,7 @@ h4, h5 {
 }
 
 #banner1{
-    height: 60vw; /* 450px */
-    background-image: url("images/slides/pcbanner.png");  
+    height: 60vw; /* 450px */ 
 }
 
 #banner2{
